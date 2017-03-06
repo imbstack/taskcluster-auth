@@ -54,8 +54,8 @@ defaults:
     # Leave unset if running inside Heroku
     buckets:
       docs:                     !env DOCS_BUCKET
-      schemas:                  !env SCHEMA_BUCKET
-      references:               !env REF_BUCKET
+      schemas:                  !env SCHEMAS_BUCKET
+      references:               !env REFS_BUCKET
 
   server:
     # Public URL from which the server can be accessed (used for persona)

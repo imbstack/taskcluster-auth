@@ -133,7 +133,7 @@ let load = Loader({
         referencePrefix:  'auth/v1/exchanges.json',
         publish:          cfg.app.publishMetaData,
         aws:              cfg.aws,
-        referenceBucket:  cfg.buckets.references,
+        referenceBucket:  cfg.app.buckets.references,
         monitor:          monitor.prefix('publisher'),
       })
   },
@@ -187,7 +187,7 @@ let load = Loader({
         baseUrl:            cfg.server.publicUrl + '/v1',
         referencePrefix:    'auth/v1/api.json',
         aws:                cfg.aws,
-        referenceBucket:    cfg.buckets.reference,
+        referenceBucket:    cfg.app.buckets.references,
         monitor:            monitor.prefix('api'),
       });
     }
